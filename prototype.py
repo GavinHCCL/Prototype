@@ -1,33 +1,29 @@
 import turtle
 import random
 
-# create a turtle object
+# create LIFE
 t = turtle.Turtle()
 
-# generate a random x and y coordinate
+# generate a random point A and B
 x_red = random.randint(-380, 200)
 y_red = random.randint(-160, 250)
 
 x_green = random.randint(-380, 200)
 y_green = random.randint(-160, 250)
 
-# move the turtle to the starting position for the red dot
+# The creations start!
 t.penup()
 t.goto(x_red, y_red)
 t.pendown()
-
-# set the turtle's color to red and draw a dot
 t.color("red")
 t.dot()
 
-# move the turtle in small increments
+# How fast it goes?
 for i in range(20):
     t.forward(10)
 
-# move the turtle to the random position
+# move it to the B point!
 t.goto(x_green, y_green)
-
-# set the turtle's color to green and draw a dot
 t.color("green")
 t.dot()
 
